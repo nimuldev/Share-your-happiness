@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="16"
+    tools:context=".Activity.AddFoodActivity">
+
+    <ImageView
+        android:id="@+id/imageIV"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:layout_weight="4.8"
+        android:paddingLeft="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_add_4"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="11.2"
+
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+
+                    android:id="@+id/nameEt"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="2dp"
+
+                    android:hint="Food Name"
+                    android:textSize="14dp"
+
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_input"
+
+                        android:drawableLeft="@drawable/ic_name"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+
+                        android:inputType="text"
+                        android:paddingLeft="5dp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/dateEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+
+                    android:background="@drawable/custom_input"
+                    android:drawableLeft="@drawable/ic_schedule"
+                    android:drawablePadding="12dp"
+                    android:hint="Date"
+
+                    android:paddingLeft="10dp" />
+
+                <!--            <com.google.android.material.textfield.TextInputLayout-->
+
+
+                <!--                android:id="@+id/nameEt"-->
+                <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="0dp"-->
+                <!--                android:layout_marginTop="2dp"-->
+                <!--                android:layout_marginRight="5dp"-->
+                <!--                android:layout_weight="2.15"-->
+
+                <!--                android:hint="Post Office"-->
+                <!--                android:textSize="14dp">-->
+
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:background="@drawable/custom_input"-->
+
+                <!--                    android:drawablePadding="12dp"-->
+                <!--                    android:ems="10"-->
+
+                <!--                    android:inputType="text"-->
+                <!--                    android:paddingLeft="5dp">-->
+
+                <!--                </com.google.android.material.textfield.TextInputEditText>-->
+
+                <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/phoneEt"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:hint="Phone"
+                    android:textSize="14dp"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_input"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+
+                        android:inputType="number"
+                        android:padding="2dp"
+                        android:paddingLeft="5dp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="2dp"
+
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+
+                            android:id="@+id/houseEt"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="4"
+                            android:hint="House No/Name"
+                            android:textSize="14dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/custom_input"
+
+
+                                android:ems="10"
+
+                                android:inputType="text"
+                                android:paddingLeft="5dp">
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+
+                            android:id="@+id/areaEt"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="4"
+                            android:hint="Area"
+                            android:textSize="14dp"
+
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/custom_input"
+
+                                android:drawablePadding="12dp"
+                                android:ems="10"
+
+                                android:inputType="text"
+                                android:paddingLeft="5dp">
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="2dp"
+
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <Spinner
+                            android:id="@+id/divisionSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/custom_input"
+                            android:enabled="false"
+                            android:entries="@array/division_title"
+                            android:hint="Division"
+                            android:spinnerMode="dropdown"
+                            android:textSize="14dp"
+                           />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <Spinner
+                            android:id="@+id/districtSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/custom_input"
+                            android:entries="@array/district_title"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="2dp"
+
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <Spinner
+                            android:id="@+id/upazilaSP"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/custom_input"
+                            android:entries="@array/upazila_title"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+
+                            android:id="@+id/poEt"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="4"
+
+                            android:hint="Post Office"
+                            android:textSize="14dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/custom_input"
+
+                                android:drawablePadding="12dp"
+                                android:ems="10"
+
+                                android:inputType="text"
+                                android:paddingLeft="5dp">
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="Frizzing"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGR"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/noR"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:checked="true"
+                            android:onClick="rbClick"
+                            android:text="No" />
+
+                        <RadioButton
+                            android:id="@+id/yesR"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:onClick="rbClick"
+                            android:text="Yes" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!--                <EditText-->
+                <!--                    android:layout_marginTop="7dp"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="150dp"-->
+                <!--                    android:background="@drawable/custom_input"-->
+                <!--                   android:text="Hello"-->
+                <!--                    android:layout_marginLeft="5dp"-->
+                <!--                    android:layout_marginRight="5dp"-->
+                <!--                    android:inputType="textMultiLine"-->
+                <!--                    android:maxLines="10"-->
+                <!--                    android:gravity="top"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    />-->
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/descriptionEt"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:hint="Description: Quality,Quantity"
+                    android:textSize="14dp"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_input"
+
+
+                        android:ems="10"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLines="20"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/submitBTN"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/custom_input"
+                    android:onClick="submitBtn"
+                    android:text="Submit"
+
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

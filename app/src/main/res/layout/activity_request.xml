@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.RequestActivity">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh"
+         >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="140dp"
+           android:layout_margin="5dp"
+           android:elevation="10dp"
+           android:visibility="gone"
+           android:id="@+id/deliveryData"
+           app:cardCornerRadius="7dp"
+           app:cardElevation="30sp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:weightSum="6">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:background="#032333"
+                   android:gravity="center"
+                   android:text="Total Deal"
+                   android:textColor="#fff"
+                   android:textSize="20sp" />
+
+               <LinearLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:background="@drawable/success_btn"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight=".75"
+                       android:background="#0D2A39"
+                       android:gravity="center_vertical"
+                       android:paddingLeft="5dp"
+                       android:text="Total Delivered: "
+                       android:textColor="#F1EEEE"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:id="@+id/deliveryTv"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight=".8"
+                       android:gravity="center_vertical"
+                       android:hint="Number Of delivery"
+                       android:paddingLeft="5dp"
+                       android:textColor="#000"
+                       android:textSize="18sp"
+
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:background="@drawable/receive"
+
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight=".75"
+                       android:background="#01293E"
+                       android:gravity="center_vertical"
+                       android:paddingLeft="5dp"
+                       android:text="Total Received: "
+                       android:textColor="#F1EEEE"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:id="@+id/receiveTv"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight=".8"
+                       android:gravity="center_vertical"
+                       android:hint="Number Of Received"
+                       android:paddingLeft="5dp"
+                       android:textColor="#000"
+                       android:textSize="18sp" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <ScrollView
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#ffffff">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/requestRecycling"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+               </androidx.recyclerview.widget.RecyclerView>
+
+           </LinearLayout>
+       </ScrollView>
+   </LinearLayout>
+
+
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

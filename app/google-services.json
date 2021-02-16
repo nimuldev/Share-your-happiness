@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "743889186560",
+    "firebase_url": "https://share-your-happiness.firebaseio.com",
+    "project_id": "share-your-happiness",
+    "storage_bucket": "share-your-happiness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743889186560:android:d9d7736e331156e5114de5",
+        "android_client_info": {
+          "package_name": "com.share.your.happiness.shareyourhappiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743889186560-q1v697ijlrcepvr84mb02p1dfgdj02ac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.share.your.happiness.shareyourhappiness",
+            "certificate_hash": "839479f92a34447140583ec5ea81156c7a21c48e"
+          }
+        },
+        {
+          "client_id": "743889186560-u82nfe3tjhckmbc7qfp41m36amav6qt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCyaGjaIOY8LeYgpfKeRYO1tZyk8RnZSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743889186560-u82nfe3tjhckmbc7qfp41m36amav6qt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

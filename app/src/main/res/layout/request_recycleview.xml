@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/requestItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="1dp"
+                android:id="@+id/foodIv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/custom_input"
+                android:scaleType="fitXY"
+                android:src="@drawable/food" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2.8"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/foodNameTvR"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.8"
+
+                        android:paddingTop="1dp"
+                        android:text="Junk FOOD"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dateTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingTop="1dp"
+                        android:text="Date:20/20/2020"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileIvR"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:src="@drawable/user"
+                        app:civ_border_color="#000000"
+                        app:civ_circle_background_color="#000000" />
+
+                    <TextView
+                        android:id="@+id/profileNameTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="2.5"
+                        android:gravity="center_vertical"
+                        android:text="Nahid"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/timeTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="2.5"
+                        android:gravity="center_vertical"
+                        android:paddingTop="2dp"
+                        android:text="Time:20.50PM"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/statusTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center_vertical"
+                        android:text="Status:Panding"
+                        android:textColor="#000" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:gravity="end"
+
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/success"
+                        android:gravity="center"
+                        android:text="Successfully Delivery"
+                        android:textColor="#fff"
+                        android:textSize="14dp"
+                        android:id="@+id/delivery"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+
+                        />
+
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/receiveIv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:text="Receive"
+                        android:textSize="11sp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="1dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/success_btn"
+                        />
+
+                    <Button
+                        android:id="@+id/deleteIv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:text="Delete"
+                        android:textSize="11sp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="1dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/search_btn"
+                        />
+
+
+                    <Button
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/rejectIv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:text="Rejected"
+                        android:textSize="11sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/search_btn"
+                        />
+
+
+
+
+                    <Button
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/acceptIv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:text="Accept"
+                        android:textSize="11sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/success_btn"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
